@@ -1,21 +1,23 @@
 package com.marsthink.animationdemo;
 
-import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.marsthink.animationdemo.activities.XBallsFallActivity;
 import com.marsthink.animationdemo.animations.TVCloseAnimation;
 import com.marsthink.animationdemo.animations.ThreeDAnimation;
 import com.marsthink.animationdemo.animations.VibrateAnimation;
+import com.marsthink.animationdemo.views.XferModeProgressView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView mImageView;
     Button mButton;
+    XferModeProgressView mProgressView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +28,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void initViews() {
+        mProgressView = (XferModeProgressView)findViewById(R.id.view_progress);
         mImageView = (ImageView) findViewById(R.id.img);
         mButton = (Button) findViewById(R.id.btn_start);
+        mImageView.getHeight();
+        mImageView.getMeasuredHeight();
+        mImageView.setImageTintList(ColorStateList.valueOf(Color.WHITE));
         findViewById(R.id.btn_jump).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, XBallsFallActivity.class));
+//                startActivity(new Intent(MainActivity.this, XBallsFallActivity.class));
+                mProgressView.startAnimation();
             }
         });
+//        ValueAnimator animator = ValueAnimator.ofInt(0,1000);
+//        animator.setDuration(1000);
+//        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+//            @Override
+//            public void onAnimationUpdate(ValueAnimator animation) {
+//                Log.d("jamal.jo", "onAnimationUpdate: "+animation.getAnimatedValue());
+//            }
+//        });
+//        animator.start();
     }
 
     void animation() {

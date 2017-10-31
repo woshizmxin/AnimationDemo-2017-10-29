@@ -8,10 +8,16 @@
     android:orientation="vertical"
     tools:context="com.marsthink.animationdemo.MainActivity">
 
+    <com.marsthink.animationdemo.views.XferModeProgressView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/view_progress"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_margin="50dp"
+        android:visibility="gone"
         android:adjustViewBounds="true"
         android:src="@drawable/hi"
         android:id="@+id/img"
