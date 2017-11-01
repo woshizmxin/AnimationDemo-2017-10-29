@@ -9,8 +9,9 @@
     tools:context="com.marsthink.animationdemo.MainActivity">
 
     <com.marsthink.animationdemo.views.XferModeProgressView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:id="@+id/view_progress"/>
 
     <ImageView

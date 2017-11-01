@@ -41,15 +41,6 @@ public class MainActivity extends AppCompatActivity {
                 mProgressView.startAnimation();
             }
         });
-//        ValueAnimator animator = ValueAnimator.ofInt(0,1000);
-//        animator.setDuration(1000);
-//        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-//            @Override
-//            public void onAnimationUpdate(ValueAnimator animation) {
-//                Log.d("jamal.jo", "onAnimationUpdate: "+animation.getAnimatedValue());
-//            }
-//        });
-//        animator.start();
     }
 
     void animation() {
