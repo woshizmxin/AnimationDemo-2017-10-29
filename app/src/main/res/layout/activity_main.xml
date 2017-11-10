@@ -8,20 +8,18 @@
     android:orientation="vertical"
     tools:context="com.marsthink.animationdemo.MainActivity">
 
-    <com.marsthink.animationdemo.views.CustomLinearLayout
-        android:layout_width="match_parent"
+    <com.marsthink.animationdemo.views.VerticalCenterLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <com.marsthink.animationdemo.views.XferModeProgressView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:id="@+id/view_progress"/>
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/view_progress"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_margin="50dp"
-            android:visibility="gone"
             android:adjustViewBounds="true"
             android:src="@drawable/hi"
             android:id="@+id/img"
@@ -44,7 +42,47 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_gravity="center"/>
-    </com.marsthink.animationdemo.views.CustomLinearLayout>
+
+
+    </com.marsthink.animationdemo.views.VerticalCenterLayout>
+
+    <!--<com.marsthink.animationdemo.views.CustomLinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<com.marsthink.animationdemo.views.XferModeProgressView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/view_progress"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:layout_margin="50dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/hi"-->
+            <!--android:id="@+id/img"-->
+            <!--android:layout_gravity="center"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="开始"-->
+            <!--android:id="@+id/btn_start"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:layout_gravity="center"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="跳转"-->
+            <!--android:id="@+id/btn_jump"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:layout_gravity="center"/>-->
+    <!--</com.marsthink.animationdemo.views.CustomLinearLayout>-->
 
 
 </LinearLayout>
