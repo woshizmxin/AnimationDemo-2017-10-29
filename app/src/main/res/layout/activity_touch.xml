@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.marsthink.animationdemo.MainActivity">
+    tools:context="com.marsthink.app.MainActivity">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="100dp"
@@ -20,7 +20,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/btn"/>
 
-    <com.marsthink.animationdemo.views.MoveView
+    <com.marsthink.app.views.MoveView
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:id="@+id/move"

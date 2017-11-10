@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.activities;
+package com.marsthink.app.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.marsthink.animationdemo.R;
+import com.marsthink.app.R;
 
 /**
  * Created by zhoumao on 2017/11/9.

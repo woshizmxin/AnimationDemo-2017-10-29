@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo;
+package com.marsthink.app;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

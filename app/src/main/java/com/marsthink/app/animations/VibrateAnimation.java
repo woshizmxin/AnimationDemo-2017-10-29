@@ -1,5 +1,5 @@
 
-package com.marsthink.animationdemo.animations;
+package com.marsthink.app.animations;
 
 import android.view.animation.Animation;
 import android.view.animation.Transformation;

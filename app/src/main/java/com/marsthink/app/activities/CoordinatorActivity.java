@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.activities;
+package com.marsthink.app.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.marsthink.animationdemo.R;
-import com.marsthink.animationdemo.adapter.HomeAdapter;
+import com.marsthink.app.R;
+import com.marsthink.app.adapter.HomeAdapter;
 
 /**
  * Created by zhoumao on 2017/11/1.

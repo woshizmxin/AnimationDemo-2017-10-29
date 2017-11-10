@@ -1,13 +1,13 @@
-package com.marsthink.animationdemo.adapter;
+package com.marsthink.app.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.marsthink.animationdemo.R;
-import com.marsthink.animationdemo.viewholder.ContentViewHolder;
-import com.marsthink.animationdemo.viewholder.TitleViewHolder;
+import com.marsthink.app.R;
+import com.marsthink.app.viewholder.ContentViewHolder;
+import com.marsthink.app.viewholder.TitleViewHolder;
 
 public class HomeAdapter extends RecyclerView.Adapter {
 

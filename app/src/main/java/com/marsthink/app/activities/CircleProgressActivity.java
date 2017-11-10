@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.activities;
+package com.marsthink.app.activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -10,7 +10,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.marsthink.animationdemo.R;
+import com.marsthink.app.R;
 
 /**
  * ObjectAnimator高级实例探究

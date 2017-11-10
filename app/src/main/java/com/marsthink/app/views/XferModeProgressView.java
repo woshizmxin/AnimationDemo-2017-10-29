@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.views;
+package com.marsthink.app.views;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.marsthink.animationdemo.R;
+import com.marsthink.app.R;
 
 /**
  * Created by zhoumao on 2017/10/31.

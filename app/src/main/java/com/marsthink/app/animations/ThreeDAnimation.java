@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.animations;
+package com.marsthink.app.animations;
 
 import android.graphics.Camera;
 import android.graphics.Matrix;

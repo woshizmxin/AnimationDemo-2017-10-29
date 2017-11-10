@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.views;
+package com.marsthink.app.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.marsthink.animationdemo.utils.ViewUtils;
+import com.marsthink.app.utils.ViewUtils;
 
 /**
  * Created by zhoumao on 2017/11/9.

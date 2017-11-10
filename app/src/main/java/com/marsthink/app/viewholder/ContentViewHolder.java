@@ -1,10 +1,10 @@
-package com.marsthink.animationdemo.viewholder;
+package com.marsthink.app.viewholder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.marsthink.animationdemo.R;
+import com.marsthink.app.R;
 
 public class ContentViewHolder extends RecyclerView.ViewHolder {
 

@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo;
+package com.marsthink.app;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.marsthink.animationdemo.animations.TVCloseAnimation;
-import com.marsthink.animationdemo.animations.ThreeDAnimation;
-import com.marsthink.animationdemo.animations.VibrateAnimation;
-import com.marsthink.animationdemo.views.XferModeProgressView;
+import com.marsthink.app.animations.TVCloseAnimation;
+import com.marsthink.app.animations.ThreeDAnimation;
+import com.marsthink.app.animations.VibrateAnimation;
+import com.marsthink.app.views.XferModeProgressView;
 
 public class MainActivity extends AppCompatActivity {
 

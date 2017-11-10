@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.marsthink.animationdemo.MainActivity">
+    tools:context="com.marsthink.app.MainActivity">
 
-    <com.marsthink.animationdemo.views.VerticalCenterLayout
+    <com.marsthink.app.views.VerticalCenterLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <com.marsthink.animationdemo.views.XferModeProgressView
+        <com.marsthink.app.views.XferModeProgressView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -44,7 +44,7 @@
             android:layout_gravity="center"/>
 
 
-    </com.marsthink.animationdemo.views.VerticalCenterLayout>
+    </com.marsthink.app.views.VerticalCenterLayout>
 
     <!--<com.marsthink.animationdemo.views.CustomLinearLayout-->
         <!--android:layout_width="match_parent"-->

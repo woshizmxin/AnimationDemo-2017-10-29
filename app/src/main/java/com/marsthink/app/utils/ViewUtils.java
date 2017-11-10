@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.utils;
+package com.marsthink.app.utils;
 
 import android.content.Context;
 import android.content.res.Resources;

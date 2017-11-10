@@ -1,11 +1,11 @@
-package com.marsthink.animationdemo.activities;
+package com.marsthink.app.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import com.marsthink.animationdemo.R;
-import com.marsthink.animationdemo.views.XBallView;
+import com.marsthink.app.R;
+import com.marsthink.app.views.XBallView;
 
 /**
  * 小球下落动画加强版XBallsFallActivity，增加了小球桌底时的压扁、回弹动画

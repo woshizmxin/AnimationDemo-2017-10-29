@@ -1,4 +1,4 @@
-package com.marsthink.animationdemo.views;
+package com.marsthink.app.views;
 
 import android.app.Activity;
 import android.content.Context;

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/orange"
-    tools:context="com.marsthink.animationdemo.MainActivity">
+    tools:context="com.marsthink.app.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
