@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+
+android {
+    productFlavors {
+        mt {
+        }
+
+        tower {
+        }
+    }
+}
+
+
+def printInfo(String flavor) {
+    println "#################"
+    println flavor
+    println "#################"
+}

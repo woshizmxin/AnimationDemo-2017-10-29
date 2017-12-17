@@ -23,12 +23,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
         initViews();
         animation();
     }
 
     void initViews() {
-        mProgressView = (XferModeProgressView)findViewById(R.id.view_progress);
+        mProgressView = (XferModeProgressView) findViewById(R.id.view_progress);
         mImageView = (ImageView) findViewById(R.id.img);
         mButton = (Button) findViewById(R.id.btn_start);
         mImageView.getHeight();
@@ -38,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                startActivity(new Intent(MainActivity.this, XBallsFallActivity.class));
-                mProgressView.startAnimation();
+//                mProgressView.startAnimation();
+
             }
         });
     }

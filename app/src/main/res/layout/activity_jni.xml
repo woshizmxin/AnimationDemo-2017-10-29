@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,12 +7,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.marsthink.app.MainActivity">
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/hello"
+        android:ellipsize="end"
+        android:text="123231232132131233213232321323123123123123123123233213232"
+        android:singleLine="true"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_jni"
+        android:visibility="gone"
         android:layout_gravity="center"
         android:text="@string/app_name"
         android:textColor="@color/orange"/>
 
-</LinearLayout>
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+
+    </View>
+
+
+
+</RelativeLayout>

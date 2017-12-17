@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.marsthink.app.R;
-import com.marsthink.app.utils.EncryptUtil;
 
 /**
  * Created by zhoumao on 2017/11/11.
@@ -19,7 +18,7 @@ public class JniActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jni);
         TextView textView = findViewById(R.id.tv_jni);
-        String entrypt = EncryptUtil.aes_encrypt("hi jamaljo");
-        textView.setText("加密： " + entrypt + " \n 解密： " + EncryptUtil.aes_decrypt(entrypt));
+//        String entrypt = EncryptUtil.aes_encrypt("hi jamaljo");
+//        textView.setText("加密： " + entrypt + " \n 解密： " + EncryptUtil.aes_decrypt(entrypt));
     }
 }
