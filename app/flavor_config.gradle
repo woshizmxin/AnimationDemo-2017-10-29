@@ -10,6 +10,41 @@ android {
     }
 }
 
+task helloL {
+    doLast {
+        printInfo("helloL")
+    }
+}
+
+task hello {
+    doFirst {
+        printInfo('Hello Earth')
+    }
+    doFirst {
+        printInfo('Hello Venus')
+    }
+    doLast {
+        printInfo('Hello Mars')
+    }
+    doLast {
+        printInfo('Hello Jupiter')
+    }
+    println 'Hello world!'
+}
+
+
+
+afterEvaluate {
+    tasks.matching {
+        // 以process开头以ReleaseJavaRes或DebugJavaRes结尾的task
+        it.name.startsWith('process') && (it.name.endsWith('ReleaseJavaRes') || it.name.endsWith
+                ('DebugJavaRes'))
+        printInfo(it.name)
+    }.each { task ->
+        task.dependsOn(hello)  // 任务依赖：执行task之前需要执行dependsOn指定的任务
+    }
+}
+
 
 def printInfo(String flavor) {
     println "#################"

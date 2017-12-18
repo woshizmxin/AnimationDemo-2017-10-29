@@ -1,0 +1,51 @@
+apply plugin: 'maven'
+
+def group_id = ''
+def artifact_id = ''
+def version = ''
+
+task initPomInfo {
+    if (MDOS_COMMON_FLAVOR == 'dianping') {
+        group_id = 'com.dianping.android.sdk'
+        artifact_id = 'oversea-commons-dp'
+        version = DIANPING_VERSION
+    } else if (MDOS_COMMON_FLAVOR == 'meituan') {
+        group_id = 'com.dianping.android.sdk'
+        artifact_id = 'oversea-commons-mt'
+        version = MEITUAN_VERSION
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = group_id
+            // 如com.dianping.android.sdk，不要使用com.dianping.nova.sdk，会与nova项目冲突
+            pom.artifactId = artifact_id
+            pom.version = version  // 如1.0.0，可以自定义
+            def commitId = 'git rev-parse HEAD'.execute([], projectDir).text.trim() + ' of' + pom.version
+            pom.project {
+                // 下面只是之前nova项目的配置，可以按需求自定义
+                description commitId // 最后一次git提交的hash
+            }
+            repository(url: "http://mvn.dianpingoa.com/android-nova") {
+                authentication(userName: "fw-deploy", password: "AP2mqXWpzb4vjz51n6PMRPHByMc")
+            }
+
+        }
+    }
+}
+
+task uploadAar {
+    dependsOn clean, uploadArchives
+}
+
+// 打包时上传源码，可选
+task androidSourcesJar(type: Jar) {
+    classifier = "sources"
+    from android.sourceSets.main.java.sourceFiles
+}
+
+artifacts {
+    archives androidSourcesJar
+}

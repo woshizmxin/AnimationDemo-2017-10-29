@@ -46,12 +46,13 @@ android {
             signingConfig signingConfigs.sankuai
         }
     }
-    sourceSets{
-        main{
+    sourceSets {
+        main {
             jni.srcDirs = []
             jniLibs.srcDirs = ['src/main/jniLibs']
         }
     }
+
 
 }
 
@@ -65,26 +66,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:27.0.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
-//    compile project(':component')
-//    releaseCompile project(path: ':component', configuration: 'release')
-//    debugCompile project(path: ':component', configuration: 'debug')
+    compile project(':component')
     compile project(path: ':component')
-}
-
-
-//afterEvaluate {
-//    android.applicationVariants.each { variant ->
-//        def dx = tasks.findByName("dex${variant.name.capitalize()}")
-//        def hello = "hello${variant.name.capitalize()}"
-//        printInfo("yeah")
-////        tasks.findByName(hello).dependsOn dx.taskDependencies.getDependencies(dx)
-////        dx.dependsOn tasks.findByName(hello)
-//    }
-//}
-//
-//
-def printInfo(String flavor){
-    println "#################"
-    println flavor
-    println "#################"
 }
