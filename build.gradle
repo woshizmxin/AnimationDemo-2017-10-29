@@ -7,10 +7,13 @@ buildscript {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        maven{
+            url uri('/Users/zhoumao/Documents/android/marsthink/tmp/')
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
-
+        classpath 'com.sankuai.gradleplugin:gradleplugin:1.0.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -29,3 +32,6 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+apply plugin: 'com.sankuai.gradleplugin'

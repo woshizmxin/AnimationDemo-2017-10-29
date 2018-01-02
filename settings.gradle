@@ -1,1 +1,1 @@
-include ':app', ':log', ':component'
+include ':app', ':log', ':component', ':gradleplugin'
