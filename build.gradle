@@ -35,3 +35,4 @@ task clean(type: Delete) {
 
 
 apply plugin: 'com.sankuai.gradleplugin'
+apply plugin: com.sankuai.buildsrc.SecondPlugin
